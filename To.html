@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to.css">
+</head>
+<body>
+    <div class="main">
+      <h1><span style="color: red;">To DO</span> List</h1>
+      <div class="inp">
+        <input type="text" id="taskInput"  placeholder="Enter your task...">
+        <button class="btn " id="addBtn" onclick="addFun()">Submit</button>
+      </div>  
+
+      <div class="task">
+        <table id="taskTable">
+           
+        </table>
+      </div>
+    </div>
+<script src="td.js"></script>
+<!-- 
+    <script>
+      const input = document.getElementById("taskInput");
+      const addBtn = document.getElementById("addBtn");
+      const taskTable = document.getElementById("taskTable");
+
+      // Function to add task
+      function addTask() {
+        const taskText = input.value.trim();
+        if (taskText === "") {
+          alert("Please enter a task!");
+          return;
+        }
+
+        // Create table row
+        const row = document.createElement("tr");
+
+        // Task text column
+        const taskCol = document.createElement("td");
+        taskCol.style.width = "508px";
+        taskCol.style.height = "40px";
+        taskCol.innerHTML = `<p>${taskText}</p>`;
+        row.appendChild(taskCol);
+
+        // Remove button column
+        const btnCol = document.createElement("td");
+        btnCol.style.width = "100px";
+        btnCol.style.height = "40px";
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "Remove";
+        removeBtn.className = "btn";
+        removeBtn.onclick = () => row.remove();
+        btnCol.appendChild(removeBtn);
+        row.appendChild(btnCol);
+
+        // Add row to table
+        taskTable.appendChild(row);
+
+        // Clear input
+        input.value = "";
+      }
+
+      // Add task on button click
+      addBtn.addEventListener("click", addTask);
+
+      // Add task on pressing Enter key
+      input.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") {
+          addTask();
+        }
+      });
+    </script> -->
+</body>
+</html>

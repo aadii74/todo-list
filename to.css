@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(td.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.main{
+    width: 80%;
+    max-height: fit-content;
+    margin: 90px auto;
+    box-shadow: 0px 0px 5px black;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 20px 0px;
+}
+.main h1 {
+  color: white;
+  text-align: center;
+  font-size: 63px;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bold;
+}
+
+.inp {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 10px 71px;
+}
+
+.inp input {
+  width: 508px;
+  height: 38px;
+  box-shadow: 0px 0px 4px 1px black;
+  background: rgba(0,0,0,0.02);
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+ .btn {
+  width: 100px;
+  height: 38px;
+  margin-left: 51px;
+  background: rgba(255,0,0,0.8);
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.task{
+    margin: 10px auto;
+    width: 100%;
+}
+
+table {
+  margin: 10px auto;
+  width: 100%;
+  padding: 16px 175px;}
+
+  p{ font-size: 30px;   font-family: "Gill Sans", sans-serif;
+}
